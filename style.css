@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+body {
+    background-color: lightgrey;
+    width: 100%;
+}
+.headpart{
+    background-color: #1b1f23 !important;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+}
+.heading {
+   flex-grow: 1;
+   text-align: center;
+}
+.github {
+    margin: 1em 1.5em ;
+}
+main {
+    background-color: lightgrey;
+    padding: 70px  ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.left-side-box {
+    width: 300px;
+    height: 500px;
+    background-color: #1b1f23 ;
+    border-radius: 15px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+#search {
+    width: 500px;
+    height: 45px;
+    padding: 10px;
+    background-color: #1b1f23;
+    border-radius: 10px;
+    font-weight:bolder;
+    
+}
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outer-box .box {
+    width: 190px;
+    height: 130px;
+    background-color: #1b1f23;
+    border-radius: 15px;
+    margin: 70px 40px;
+}
+.outer-box {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.detailbox {
+    width: 735px;
+    height: 165px;
+    background-color: #1b1f23;
+    border-radius: 15px;
+}
+
+.bottombox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:800px) {
+    .outer-box {
+        display: flex;
+        flex-direction: column;
+        /* justify-content:space-between; */
+        align-items: center;
+    }
+    .outer-box .box {
+        width: 190px;
+        height: 130px;
+        background-color: #1b1f23;
+        border-radius: 15px;
+        margin:  40px;
+    }
+    .detailbox {
+        width: 500px;
+        height: 165px;
+        background-color: #1b1f23;
+        border-radius: 15px;
+    }
+}
+@media  screen and (max-width:500) {
+    .detailbox {
+        width: 200px;
+        height: 165px;
+        background-color: #1b1f23;
+        border-radius: 15px;
+    }
+}
